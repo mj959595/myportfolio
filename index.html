@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Ahmed | Portfolio</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+/* BODY */
+body{
+    background:#f5f7fb;
+    color:#1f2937;
+    line-height:1.6;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    color:white;
+    padding:80px 0;
+}
+
+/* HERO LAYOUT */
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+/* TEXT */
+.hero-text h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.hero-text h3{
+    color:#dbeafe;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:#e5e7eb;
+    max-width:700px;
+}
+
+/* BUTTON */
+.download-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 30px;
+    background:white;
+    color:#1e3a8a;
+    border-radius:10px;
+    font-weight:bold;
+    text-decoration:none;
+    transition:0.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.download-btn:hover{
+    background:#e0e7ff;
+    transform:translateY(-3px);
+}
+
+/* PROFILE (NO ANIMATION) */
+.profile-box{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    overflow:hidden;
+    border:6px solid white;
+    box-shadow:0 6px 18px rgba(0,0,0,0.2);
+}
+
+.profile-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* SECTION */
+section{
+    padding:60px 0;
+}
+
+/* TITLE */
+.section-title{
+    font-size:32px;
+    margin-bottom:25px;
+    border-left:5px solid #2563eb;
+    padding-left:12px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:22px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+/* SKILLS */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* SOFTWARE GRID */
+.software-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.software-item{
+    background:#f1f5f9;
+    padding:14px;
+    text-align:center;
+    border-radius:10px;
+    font-weight:bold;
+    color:#1e3a8a;
+    border:1px solid #e2e8f0;
+    transition:0.3s;
+}
+
+.software-item:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-3px);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#1e3a8a;
+    color:white;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .hero-text h1{
+        font-size:38px;
+    }
+
+    .hero-content{
+        text-align:center;
+        justify-content:center;
+    }
+
+    .profile-box{
+        width:200px;
+        height:200px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<div class="hero">
+<div class="container hero-content">
+
+    <div class="hero-text">
+
+        <h1>Muhammad Ahmed</h1>
+
+        <h3>Electrical Engineer | IT | Finance | Administration</h3>
+
+        <p>
+            Detail-oriented Electrical Engineering graduate with professional experience in IT management, finance, administration, and electrical maintenance. Skilled in MATLAB, SQL, and engineering software tools with strong communication, teamwork, and analytical abilities.
+        </p>
+
+        <a href="images/CV of Mr M. Ahmed.pdf" download class="download-btn">
+            Download CV
+        </a>
+
+    </div>
+
+    <div class="profile-box">
+        <img src="images/image.jpeg">
+    </div>
+
+</div>
+</div>
+
+<!-- EDUCATION -->
+<section>
+<div class="container">
+
+<h2 class="section-title">Education</h2>
+
+<div class="card">BS Electrical Engineering - BUITEMS (2020–2024)</div>
+<div class="card">Intermediate - Islamia Boys College (2018–2020)</div>
+<div class="card">Matric - St. Francis Grammar School (2005–2017)</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+<div class="container">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="card">IT Lab In-charge - Jinnah Elite Campus</div>
+<div class="card">Finance Staff - Danish NGO</div>
+<div class="card">Accounts & Electrical Engineer - Jarri Enterprises</div>
+
+</div>
+</section>
+
+<!-- SOFTWARE -->
+<section>
+<div class="container">
+
+<h2 class="section-title">Software Skills</h2>
+
+<div class="software-grid">
+
+<div class="software-item">MATLAB</div>
+<div class="software-item">Simulink</div>
+<div class="software-item">ETAP</div>
+<div class="software-item">Proteus</div>
+<div class="software-item">Multisim</div>
+<div class="software-item">LTspice</div>
+<div class="software-item">Arduino IDE</div>
+<div class="software-item">Python</div>
+<div class="software-item">C++</div>
+<div class="software-item">VS Code</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section>
+<div class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">Email: Hdusaie1@gmail.com</div>
+<div class="card">Phone: +92 313-8249033</div>
+<div class="card">Location: Quetta, Pakistan</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 Muhammad Ahmed | Portfolio
+</footer>
+
+</body>
+</html>
